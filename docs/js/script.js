@@ -15,3 +15,13 @@ boton.addEventListener("click", function(/* e */){
         contador=0;
     }
 })
+
+const app = new Vue({
+    el: '#app',
+    data:{
+        titulo: 'Los Tacos del Gera',
+        subtitulo: 'Exquisitos tacos, ven y pruebalos'
+    }
+
+
+})

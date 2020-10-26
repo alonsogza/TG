@@ -21,6 +21,16 @@ nav a{
     text-decoration: none;
 }
 
+.bg-primary{
+    /* Dark Knight */
+    background: #BA8B02;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #181818, #BA8B02);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #181818, #BA8B02); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+
+
 .icono{
     display: block;
     z-index: 100000000;
@@ -53,7 +63,7 @@ header{
     width: 100%;
 }
 
-.container{
+.containerH{
     width: 95%;
     max-width: 1200px;
     display: flex;
@@ -197,7 +207,7 @@ clip-path: circle(0% at 0 0);
         transform: translate(0);
     }
 }
-
+/* 
 @media screen and (max-width:1000px){
     img{
         height: 400px;
@@ -234,7 +244,7 @@ clip-path: circle(0% at 0 0);
 }
 
 @media screen and (max-width:450px){
-    .container{
+    .containerH{
         width: 100%;
         flex-wrap: wrap-reverse;
         justify-content: center;
@@ -262,4 +272,4 @@ clip-path: circle(0% at 0 0);
         font-size: 15px;
     }
     
-}
+} */
