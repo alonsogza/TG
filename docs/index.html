@@ -5,31 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Los Tacos del Gera</title>
     <link rel="icon" href="img/taco.svg" type="image/icon type">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <title>Los Tacos del Gera</title>
 </head>
 
 <body>
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Tacos del Gera</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav mr-auto ml-auto text-center">
+                <a class="nav-item nav-link" href="#Ubicacion">Ubicacion</a>
+                <a class="nav-item nav-link" href="#Guisos">Nuestra Especialidad</a>
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+                <a href="https://www.google.com" target="black">
+                    <span style="font-size: 2em; color: #fff;">
+                        <i class="fab fa-instagram"></i>
+                    </span>
+                </a>
+                <!-- <a href="#" class='btn btn-primary'><i class="fab fa-instagram-square"></i></a> -->
+            </div>
+        </div>
+    </nav>
     <div class="container-fluid" id="app">
         <div class="row bg-primary">
-            <nav>
-                <a href="#">Op 1 </a>
-                <a href="#">Op 2 </a>
-                <a href="#">Op 3 </a>
-                <a href="#">Guisos </a>
-                <a href="#Ubicacion">Ubicacion </a>
-            </nav>
-            <div class="col-md-7 mt-5 textos text-center">
+            <!-- <nav>
+                <a href="#" id="icono" class="icono">Menú</a>
+                <div class="enlaces uno" id="enlaces">
+                    <a href="#">Op 11 </a>
+                    <a href="#">Op 22 </a>
+                    <a href="#">Guisos </a>
+                    <a href="#Ubicacion">Ubicacion </a>
+                </div>
+            </nav> -->
+            <div class="col-12 col-md-7 mt-5 text-center textos">
                 <h1>{{titulo}}</h1>
                 <h2>{{subtitulo}}</h2>
-                <div class="textos text-center">
-                </div>
             </div>
-            <div class="col-md-5 mt-5">
-                <img loading="lazy" src="img/taco-03-tiny.jpg"  class="rounded img-thumbnail" sytle="" alt="taco">
+            <div class="col-12 col-md-5 mt-5">
+                <img loading="lazy" src="img/taco-03-tiny.jpg" class="rounded img-thumbnail" sytle="" alt="taco">
             </div>
             <div class="wave">
                 <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
@@ -37,66 +60,59 @@
                         <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
                             style="stroke: none; fill: #fff;"></path>
                     </svg></div>
-            </div>            
-        </div>            
-
-<div class="row">
-                <div class="col">
-                <header>
-                    <div class="containerH">
-                        <nav>
-                            <a href="#" id="icono" class="icono">Menú</a>
-                            <div class="enlaces uno" id="enlaces">
-                                <a href="">Inicio</a>
-                                <a href="#Ubicacion">Ubicacion</a>
-                                <!-- <a href="">Contacto</a> -->
-                            </div>
-                        </nav>
-                        <div class="textos">
-                            <h1>Los Tacos del Gera</h1>
-                            <h2>Exquisitos tacos, ven y pruebalos</h2>
-                            <!-- <a href="#">Contacto</a> -->
-                        </div>
-                        <!-- <img src="vector.png" alt=""> -->
-                        <div id="foto">
-                            <!-- <img loading="lazy" src="img/taco-01-tiny.jpg"  class="img-fluid" alt="taco">
-                    <span>Photo by <a href="https://unsplash.com/@miguel_pembo?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Miguel Andrade</a> on <a href="https://unsplash.com/s/photos/tacos?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> -->
-    
-                            <img loading="lazy" src="img/taco-02-tiny.jpg"  class="img-thumbnail" sytle="" alt="taco">
-                            <span>Photo by <a
-                                    href="https://unsplash.com/@profxavier26?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Xavier
-                                    crook</a> on <a
-                                    href="https://unsplash.com/s/photos/tacos?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-                        </div>
-                    </div>
-                </header>
-                <div class="wave">
-                    <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                            style="height: 100%; width: 100%;">
-                            <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                                style="stroke: none; fill: #fff;"></path>
-                        </svg></div>
-                </div>
-                <div class="row" id="Ubicacion">
-                    <div class="col">
-                        <h3><img src="img/taco.svg" alt="taco" style="width:28px;height:28px;"> Nuestra Ubicación</h3>
-                        <div class="embed-responsive embed-responsive-16by9">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1797.144643243703!2d-100.3940108!3d25.7279453!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662978ddafc0ba9%3A0xbbe316aa149722ea!2sLos%20Tacos%20del%20Gera!5e0!3m2!1ses-419!2smx!4v1603442750596!5m2!1ses-419!2smx"
-                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                            tabindex="0"></iframe>
-                        </div>
-                    </div>
-                </div>
-                
-            
-                
             </div>
-</div>
-
         </div>
+
+        <div class="row" id="Ubicacion">
+            <div class="col text-center textos-black">
+                <!-- <img src="img/taco.svg" alt="taco" class='img-taco'> -->
+                <h3>{{ubicacion}}</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1797.144643243703!2d-100.3940108!3d25.7279453!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662978ddafc0ba9%3A0xbbe316aa149722ea!2sLos%20Tacos%20del%20Gera!5e0!3m2!1ses-419!2smx!4v1603442750596!5m2!1ses-419!2smx"
+                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="wave">
+                <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                        style="height: 100%; width: 100%;">
+                        <path d="M0.00,49.98 C150.00,150.00 271.49,-50.00 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+                            style="stroke: none; fill: #fff;"></path>
+                    </svg></div>
+            </div>
+        </div>
+
+        <div class="row bg-primary" id="Guisos">
+            <div class="col textos">
+                <h3 class="text-center">{{tit_guisos}}</h3>
+                <div class="d-flex justify-content-center">
+                    <ul class="fa-ul">
+                        <li><span class="fa-li"><i class="fas fa-angle-double-right"></i></span>Barbacoa</li>
+                        <li><span class="fa-li"><i class="fas fa-angle-double-right"></i></span>Chicharon</li>
+                        <li><span class="fa-li"><i class="fas fa-angle-double-right"></i></span>Queso con Rajas</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wave">
+                <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                        style="height: 100%; width: 100%;">
+                        <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                            style="stroke: none; fill: #fff;"></path>
+                    </svg></div>
+            </div>
+        </div>
+        <footer class="text-center">
+            <span>
+                <i class="fas fa-mobile-alt"></i> {{tel}}
+            </span>
+        </footer>
     </div>
 
+    <script defer src="js/all.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/vue.js"></script>
