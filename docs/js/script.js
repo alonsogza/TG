@@ -7,8 +7,11 @@ document.addEventListener(`click`, (e) => {
   const origin = e.target.closest("a");
   const ancho = document.body.scrollWidth;
 
-  if (ancho < 751) {
-    btnMenu.click();
+
+  console.log(`Actualente cuenta con un ancho de ${ancho}, ${origin}`);
+  if (ancho < 750) {
+     
+      btnMenu.click();
   }
 
   if (origin) {
@@ -19,7 +22,7 @@ document.addEventListener(`click`, (e) => {
     }
 
     // console.clear();
-    // console.log(`You clicked ${origin.href}`);
+    console.log(`You clicked ${origin.href}`);
     origin.classList.add("active");
   }
 });
