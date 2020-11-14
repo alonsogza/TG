@@ -1,38 +1,22 @@
-// let boton = document.getElementById("icono");
-// let enlaces = document.getElementById("enlaces");
-// let contador = 1;
-console.log('Estoy activo...;');
-// boton.addEventListener("click", function(e){
-//     console.log(`Click`);
-//     e.preventDefault();
-//     if(contador==0){
-//         enlaces.className = ("enlaces dos")
-//         console.log(`OP: ${contador}`)
-//         contador=1;
-//     }else{
-//         enlaces.classList.remove("dos")
-//         enlaces.className = ("enlaces uno")
-//         console.log(`OP: ${contador}`)        
-//         contador=0;
-//     }
-// })
+'use strict';
+// debugger;
+const btnMenu = document.querySelector('#btn-menu')
+const a = document.getElementsByTagName('a');
 
 document.addEventListener(`click`, e => {
     const origin = e.target.closest("a");
-    
+    // btnMenu.click();
+
+    //Obtenenemos todos los anchors
+    for (let idx= 0; idx < a.length; ++idx){
+        // console.log(a[idx].href);
+        a[idx].classList.remove("active");
+    }    
+
     if (origin) {
-        // debugger;
-        origin.classList.remove('active')
-        console.clear();
-        console.log(`You clicked ${origin.href}`);
-
-//         if(origin.includes('Guisos')){
+        // console.clear();
+        // console.log(`You clicked ${origin.href}`);
         origin.classList.add('active')
-//         }
-
-// origin.includes('Guisos')
-// origin.includes('Ubicacion')
-        
     }
   });
 
