@@ -15,6 +15,12 @@ Una sola página donde utilizo los siguientes elementos:
 ---
 
 :zap: Wave: https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections
+
 :zap: Normalize: 
 
+:zap: VUE:
+
+:zap: Font Awesome:
+
 ---
+
