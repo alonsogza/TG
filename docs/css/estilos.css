@@ -1,3 +1,4 @@
+/*
 *{
     margin:0;
     padding: 0;
@@ -20,6 +21,7 @@ nav a{
     color:#fff;
     text-decoration: none;
 }
+*/
 
 .bg-primary{
     /* Dark Knight */
@@ -30,12 +32,13 @@ nav a{
 
 
 
-
+/*
 .icono{
     display: block;
     z-index: 100000000;
     animation: moverIzquierda 1s ease-in;
 }
+*/
 
 header{
     /* background: #DA4453; */ /* fallback for old browsers */
@@ -80,21 +83,21 @@ img{
 }
 
 .textos{
-    width: 50%;
+    /* width: 50%; */
     color:#fff;
 }
 
 .textos h1{
-    font-size:80px;
+    /* font-size:80px; */
     animation: moverDerecha 1s ease-in;
 
 }
 
 .textos h2{
-    font-size:30px;
+    /* font-size:30px; */
     animation: moverIzquierda 1s ease-in;
 }
-
+/*
 .textos a{
     display: inline-block;
     color:#fff;
@@ -107,9 +110,8 @@ img{
     text-align: center;
     padding: 10px 0;
     animation: arriba 1s ease-in;
-
 }
-
+*/ 
 .wave{
     height: 100px;
     width: 100%;
@@ -134,7 +136,7 @@ img{
    
 }
 
-
+/*
 .enlaces{
     position: fixed;
     display: flex;
@@ -147,17 +149,21 @@ img{
     flex-direction: column;
     width: 100%;
     transition: all 1s ease;
+*/    
     /* background: #bc4e9c;  */ /* fallback for old browsers */
     /* background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  */ /* Chrome 10-25, Safari 5.1-6 */
     /* background: linear-gradient(to right, #f80759, #bc4e9c); */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     /* Dark Knight */
-    background: #BA8B02;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #181818, #BA8B02);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #181818, #BA8B02); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    /* background: #BA8B02;  */ /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #181818, #BA8B02);  */ /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #181818, #BA8B02)*/ ; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/*
 }
+*/
 
+
+/*
 .uno{
     
 -webkit-clip-path: circle(0% at 0 0);
@@ -171,6 +177,7 @@ clip-path: circle(0% at 0 0);
     clip-path: circle(150% at 0 0);
     
     }
+*/
 
 @keyframes moverIzquierda{
     0%{

@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Los Tacos del Gera</title>
     <link rel="icon" href="img/taco.svg" type="image/icon type">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
@@ -22,13 +23,11 @@
                 <a href="#">Guisos </a>
                 <a href="#Ubicacion">Ubicacion </a>
             </nav>
-            <div class="col-md-7 mt-5 textos text-center">
+            <div class="col-md-6 mt-5 textos text-center">
                 <h1>{{titulo}}</h1>
                 <h2>{{subtitulo}}</h2>
-                <div class="textos text-center">
-                </div>
-            </div>
-            <div class="col-md-5 mt-5">
+             </div>
+            <div class="col-md-6 mt-5">
                 <img loading="lazy" src="img/taco-03-tiny.jpg"  class="rounded img-thumbnail" sytle="" alt="taco">
             </div>
             <div class="wave">
@@ -38,7 +37,18 @@
                             style="stroke: none; fill: #fff;"></path>
                     </svg></div>
             </div>            
-        </div>            
+        </div>
+        <div class="row" id="Ubicacion">
+            <div class="col">
+                <h3><img src="img/taco.svg" alt="taco" style="width:28px;height:28px;"> Nuestra Ubicación</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1797.144643243703!2d-100.3940108!3d25.7279453!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662978ddafc0ba9%3A0xbbe316aa149722ea!2sLos%20Tacos%20del%20Gera!5e0!3m2!1ses-419!2smx!4v1603442750596!5m2!1ses-419!2smx"
+                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
 
 <div class="row">
                 <div class="col">
