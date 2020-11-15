@@ -1,7 +1,7 @@
 # TG
 ### Proyecto Landing Page 
 
-Se utiliza los siguientes elementos:
+Una sola página donde utilizo los siguientes elementos:
 
 - HTML
 - CSS
@@ -9,6 +9,7 @@ Se utiliza los siguientes elementos:
 - Bootstrap v4.5.2
 - Normalize v8.0.1
 - VUE v2.6.12
+- Font Awesome 5.15.1
 
 
 ---
