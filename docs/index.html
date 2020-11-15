@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
+    <meta Content-Type: "text/html"; charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="img/taco.svg" type="image/icon type">
@@ -26,10 +26,15 @@
                 <a class="nav-item nav-link" href="#Ubicacion">Ubicacion</a>
                 <a class="nav-item nav-link" href="#Guisos">Nuestra Especialidad</a>
             </div>
-            <div class="d-flex flex-row justify-content-center">
-                <a href="https://www.google.com" target="black">
+            <div class="d-flex flex-row justify-content-center mr-2">
+                <a href="https://www.facebook.com/lostacosdelgera/" target="_blank">
+                    <span style="font-size: 2em; color: #fff; padding: 8px;">
+                        <i class="fab fa-facebook-square"> </i>
+                    </span>
+                </a>                
+                <a href="https://www.instagram.com/lostacosdelgera/" target="_blank">
                     <span style="font-size: 2em; color: #fff;">
-                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-instagram"> </i>
                     </span>
                 </a>
                 <!-- <a href="#" class='btn btn-primary'><i class="fab fa-instagram-square"></i></a> -->
@@ -38,15 +43,6 @@
     </nav>
     <div class="container-fluid" id="app">
         <div class="row bg-primary">
-            <!-- <nav>
-                <a href="#" id="icono" class="icono">Menú</a>
-                <div class="enlaces uno" id="enlaces">
-                    <a href="#">Op 11 </a>
-                    <a href="#">Op 22 </a>
-                    <a href="#">Guisos </a>
-                    <a href="#Ubicacion">Ubicacion </a>
-                </div>
-            </nav> -->
             <div class="col-12 col-md-7 mt-5 text-center textos">
                 <h1>{{titulo}}</h1>
                 <h2>{{subtitulo}}</h2>
@@ -76,7 +72,13 @@
                 <div class="mt-3">
                     <span>
                         <i class="fas fa-mobile-alt"></i> {{tel}}
-                    </span>                
+                    </span>        
+                    <!-- <br>
+                    <hr>        
+                    <a :href='{{tel2}}'>{{tel}}</a>                     -->
+                    <br>
+                    <hr>
+                    <a href="tel:+491570156">+49 157 0156</a>
                 </div>
             </div>
         </div>

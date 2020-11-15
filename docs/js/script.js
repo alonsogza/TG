@@ -35,7 +35,8 @@ const app = new Vue({
         subtitulo: 'Exquisitos tacos, ven y pruebalos',
         ubicacion: 'Nuestra Ubicación',
         tit_guisos: 'Nuestra Especialidad',
-        tel: '81 12345678'
+        tel: '81 1465 7893',
+        tel2: 'tel:+81 1465 7893'        
     }
 
 })
