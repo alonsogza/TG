@@ -9,10 +9,9 @@ document.addEventListener(`click`, (e) => {
 
 
   console.log(`Actualente cuenta con un ancho de ${ancho}, ${origin}`);
-  if (ancho < 750) {
-     
+  if ((ancho <= 750) && (origin.href.includes('Guisos') || (origin.href.includes('Ubicacion')))) {
       btnMenu.click();
-  }
+  };
 
   if (origin) {
     //Obtenenemos todos los anchors
@@ -29,14 +28,17 @@ document.addEventListener(`click`, (e) => {
 
 
 const app = new Vue({
-    el: '#app',
-    data:{
-        titulo: 'Los Tacos del Gera',
-        subtitulo: 'Exquisitos tacos, ven y pruebalos',
-        ubicacion: 'Nuestra Ubicación',
-        tit_guisos: 'Nuestra Especialidad',
-        tel: '81 1465 7893',
-        tel2: 'tel:+81 1465 7893'        
-    }
-
-})
+  el: "#app",
+  data: {
+    titulo: "Los Tacos del Gera",
+    subtitulo: "Exquisitos tacos, ven y pruebalos",
+    ubicacion: "Nuestra Ubicación",
+    tit_guisos: "Nuestra Especialidad",
+    guisos: [
+      { nombre: "Barbacoa", frecuencia: "Diario" },
+      { nombre: "Chicharon", frecuencia: "Diario" },
+      { nombre: "Queso con Rajas", frecuencia: "Mar/Mier/Ju" },
+    ],
+    tel: "81 1465 7893",
+  },
+});
