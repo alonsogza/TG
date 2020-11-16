@@ -39,6 +39,7 @@ const app = new Vue({
       { nombre: "Chicharon", frecuencia: "Diario" },
       { nombre: "Queso con Rajas", frecuencia: "Mar/Mier/Ju" },
     ],
-    tel: "81 1465 7893",
+    tit_tel: "81 1465 7893",
+    url_Tel: "tel:8186051719",
   },
 });
