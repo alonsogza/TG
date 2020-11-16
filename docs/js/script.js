@@ -35,11 +35,11 @@ const app = new Vue({
     ubicacion: "Nuestra Ubicación",
     tit_guisos: "Nuestra Especialidad",
     guisos: [
-      { nombre: "Barbacoa", frecuencia: "Diario" },
-      { nombre: "Chicharon", frecuencia: "Diario" },
-      { nombre: "Queso con Rajas", frecuencia: "Mar/Mier/Ju" },
+      { nombre: "Barbacoa", siempre: true },
+      { nombre: "Chicharon", siempre: true },
+      { nombre: "Queso con Rajas", siempre: false },
     ],
-    tit_tel: "81 1465 7893",
-    url_Tel: "tel:8186051719",
+    tit_tel: "81 2442 2917",
+    url_tel: "tel:8124422917",
   },
 });
