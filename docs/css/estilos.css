@@ -1,15 +1,22 @@
+<<<<<<< HEAD
 /*
 *{
+=======
+/* *{
+>>>>>>> main
     margin:0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 body{
     font-family: 'Open Sans', sans-serif;
 }
 
-nav{
+ul{
+    text-decoration: none;
+}
+/* nav{
     position: fixed;
     top: 20px;
     left: 20px;
@@ -20,8 +27,12 @@ nav{
 nav a{
     color:#fff;
     text-decoration: none;
+<<<<<<< HEAD
 }
 */
+=======
+} */
+>>>>>>> main
 
 .bg-primary{
     /* Dark Knight */
@@ -30,15 +41,23 @@ nav a{
     background: linear-gradient(to right, #181818, #BA8B02); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+<<<<<<< HEAD
 
 
 /*
 .icono{
+=======
+/* .icono{
+>>>>>>> main
     display: block;
-    z-index: 100000000;
+    z-index: 100;
     animation: moverIzquierda 1s ease-in;
+<<<<<<< HEAD
 }
 */
+=======
+} */
+>>>>>>> main
 
 header{
     /* background: #DA4453; */ /* fallback for old browsers */
@@ -66,20 +85,31 @@ header{
     width: 100%;
 }
 
-.containerH{
+/* .containerH{
     width: 95%;
     max-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: auto;
-}
+} */
+
 
 img{
+    animation: arriba 1s ease-in;
+}
+/* 
+.img-taco{
     display: block;
     height: 450px;
+    width: 28px;
+    height: 28px;
     object-fit: cover;
-    animation: arriba 1s ease-in;
+}
+ */
+.textos-black{
+    width: 50%;
+    color:#000;
 }
 
 .textos{
@@ -88,17 +118,37 @@ img{
 }
 
 .textos h1{
+<<<<<<< HEAD
     /* font-size:80px; */
+=======
+    /* font-size:4rem; */
+>>>>>>> main
     animation: moverDerecha 1s ease-in;
-
 }
 
 .textos h2{
+<<<<<<< HEAD
     /* font-size:30px; */
     animation: moverIzquierda 1s ease-in;
 }
 /*
 .textos a{
+=======
+    /* font-size:2rem; */
+    animation: moverIzquierda 1s ease-in;
+}
+
+.textos h3{
+    animation: arriba 1s ease-in;
+}
+
+.textos ul{
+    list-style-type:none;
+    animation: moverIzquierda 1s ease-in;    
+}
+
+/* .textos a{
+>>>>>>> main
     display: inline-block;
     color:#fff;
     font-weight: 300;
@@ -110,8 +160,13 @@ img{
     text-align: center;
     padding: 10px 0;
     animation: arriba 1s ease-in;
+<<<<<<< HEAD
 }
 */ 
+=======
+} */
+
+>>>>>>> main
 .wave{
     height: 100px;
     width: 100%;
@@ -136,9 +191,19 @@ img{
    
 }
 
+<<<<<<< HEAD
 /*
 .enlaces{
     position: fixed;
+=======
+.wave2{
+    height: 100px;
+    width: 100%;
+}
+
+/* .enlaces{ */
+    /* position: fixed;
+>>>>>>> main
     display: flex;
     top: 0;
     background: #000;
@@ -148,8 +213,13 @@ img{
     right: 0;
     flex-direction: column;
     width: 100%;
+<<<<<<< HEAD
     transition: all 1s ease;
 */    
+=======
+    transition: all 1s ease; */
+    
+>>>>>>> main
     /* background: #bc4e9c;  */ /* fallback for old browsers */
     /* background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  */ /* Chrome 10-25, Safari 5.1-6 */
     /* background: linear-gradient(to right, #f80759, #bc4e9c); */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -157,6 +227,7 @@ img{
     /* Dark Knight */
     /* background: #BA8B02;  */ /* fallback for old browsers */
     /* background: -webkit-linear-gradient(to right, #181818, #BA8B02);  */ /* Chrome 10-25, Safari 5.1-6 */
+<<<<<<< HEAD
     /* background: linear-gradient(to right, #181818, #BA8B02)*/ ; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 /*
 }
@@ -164,6 +235,13 @@ img{
 
 
 /*
+=======
+    /* background: linear-gradient(to right, #181818, #BA8B02); */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+/* } */
+
+/* 
+>>>>>>> main
 .uno{
     
 -webkit-clip-path: circle(0% at 0 0);
@@ -176,8 +254,12 @@ clip-path: circle(0% at 0 0);
     -webkit-clip-path: circle(150% at 0 0);
     clip-path: circle(150% at 0 0);
     
+<<<<<<< HEAD
     }
 */
+=======
+    } */
+>>>>>>> main
 
 @keyframes moverIzquierda{
     0%{
