@@ -14,13 +14,17 @@ Una sola página donde utilizo los siguientes elementos:
 
 ---
 
+:zap: Imagen: https://www.pexels.com
+
 :zap: Wave: https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections
 
-:zap: Normalize: 
+:zap: Bootstrap: https://getbootstrap.com/ 
 
-:zap: VUE:
+:zap: Normalize: https://necolas.github.io/normalize.css/
 
-:zap: Font Awesome:
+:zap: VUE: https://vuejs.org/
+
+:zap: Font Awesome: https://fontawesome.com/
 
 ---
 
