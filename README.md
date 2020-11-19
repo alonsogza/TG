@@ -1,7 +1,7 @@
 # TG
 ### Proyecto Landing Page 
 
-Una sola página donde utilizo los siguientes elementos:
+Una sola página ( Index.html ) donde utilizo los siguientes elementos:
 
 - HTML
 - CSS
