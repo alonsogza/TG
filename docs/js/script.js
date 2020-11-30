@@ -1,7 +1,11 @@
 'use strict';
+const ip = window.location.hostname;
+console.log(ip);
+
 // debugger;
 const btnMenu = document.querySelector('#btn-menu')
 const a = document.getElementsByTagName('a');
+
 
 document.addEventListener(`click`, (e) => {
   const origin = e.target.closest("a");
