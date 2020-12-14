@@ -8,9 +8,13 @@ document.addEventListener(`click`, (e) => {
   const ancho = document.body.scrollWidth;
 
   // console.log(`Actualente cuenta con un ancho de ${ancho}, ${origin}`);
-  if ((ancho <= 750) && (origin.href.includes('Guisos') || (origin.href.includes('Ubicacion')))) {
-      btnMenu.click();
-  };
+  // if ((ancho <= 750) && (origin.href.includes('Guisos') || (origin.href.includes('Ubicacion')))) {
+  //     btnMenu.click();
+  // };
+  // if (ancho <= 750) {
+  //   btnMenu.click();
+  // };
+
 
   if (origin) {
     //Obtenenemos todos los anchors
@@ -21,10 +25,33 @@ document.addEventListener(`click`, (e) => {
 
     // console.clear();
     // console.log(`You clicked ${origin.href}`);
-    origin.classList.add("active");
+    // origin.classList.add("active");
   }
 });
 
+
+//Desplazamiento suave con JS
+const links = document.querySelectorAll("a");
+ 
+for (const link of links) {
+  link.addEventListener("click", clickHandler);
+}
+ 
+function clickHandler(e) {
+  e.preventDefault();
+  const href = this.getAttribute("href");
+  const offsetTop = document.querySelector(href).offsetTop;
+ 
+  //--INI
+  // Quitar / Poner la clase
+  links.classList.add("active");
+  //--FIN
+
+  scroll({
+    top: offsetTop,
+    behavior: "smooth"
+  });
+}
 
 //Para crear un COMPONENTE es: Vue.componet('')
 // El primer parametro es la ETIQUETA que asignamos, en este caso <olainferior>
