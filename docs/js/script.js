@@ -11,6 +11,12 @@ document.addEventListener(`click`, (e) => {
   const origin = e.target.closest("a");
   const ancho = document.body.scrollWidth;
 
+  const links = document.querySelectorAll("a");
+
+  for (const link of links) {
+    link.addEventListener("click", clickHandler);
+  }
+
   // console.log(`Actualente cuenta con un ancho de ${ancho}, ${origin}`);
   // if ((ancho <= 750) && (origin.href.includes('Guisos') || (origin.href.includes('Ubicacion')))) {
   //     btnMenu.click();
@@ -32,6 +38,17 @@ document.addEventListener(`click`, (e) => {
     // origin.classList.add("active");
   }
 });
+
+function clickHandler(e) {
+  e.preventDefault();
+  const href = this.getAttribute("href");
+  const offsetTop = document.querySelector(href).offsetTop;
+ 
+  scroll({
+    top: offsetTop,
+    behavior: "smooth"
+  });
+}
 
 
 //Desplazamiento suave con JS
@@ -84,6 +101,18 @@ Vue.component("olasuperior", {
     return;
   },
 });
+
+Vue.component("inicio",{
+  template:/*html*/ `
+  <div id="subir">
+    <a href="#navbarSupportedContent">Inicio</a>
+  </div>
+  `,
+  data(){
+    return;
+  }
+})
+
 
 const app = new Vue({
   el: "#app",
