@@ -1,6 +1,6 @@
 html{
     /* Con esta propiedad realizamos un desplazamiento suave en todo el HTML */
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;     
 }
 
 body{
