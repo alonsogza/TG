@@ -6,24 +6,21 @@ console.log(ip);
 const btnMenu = document.querySelector('#btn-menu')
 const a = document.getElementsByTagName('a');
 
-
 document.addEventListener(`click`, (e) => {
   const origin = e.target.closest("a");
   const ancho = document.body.scrollWidth;
 
-  const links = document.querySelectorAll("a");
+  console.log(`Actualente cuenta con un ancho de ${ancho}, ${origin}`);
+  // debugger;
+  if ((ancho <= 750) && (origin)){
+    if(origin.href.includes('Guisos') || (origin.href.includes('Ubicacion'))) {
+      btnMenu.click();
+    };
+  };
 
-  for (const link of links) {
-    link.addEventListener("click", clickHandler);
-  }
-
-  // console.log(`Actualente cuenta con un ancho de ${ancho}, ${origin}`);
-  // if ((ancho <= 750) && (origin.href.includes('Guisos') || (origin.href.includes('Ubicacion')))) {
-  //     btnMenu.click();
-  // };
-  // if (ancho <= 750) {
-  //   btnMenu.click();
-  // };
+  if (ancho <= 750) {
+    btnMenu.click();
+  };
 
 
   if (origin) {
@@ -33,46 +30,47 @@ document.addEventListener(`click`, (e) => {
       a[idx].classList.remove("active");
     }
 
-    // console.clear();
-    // console.log(`You clicked ${origin.href}`);
-    // origin.classList.add("active");
+    console.clear();
+    console.log(`You clicked ${origin.href}`);
+    origin.classList.add("active");
   }
 });
 
-function clickHandler(e) {
-  e.preventDefault();
-  const href = this.getAttribute("href");
-  const offsetTop = document.querySelector(href).offsetTop;
+// function clickHandler(e) {
+//   e.preventDefault();
+//   const href = this.getAttribute("href");
+//   const offsetTop = document.querySelector(href).offsetTop;
  
-  scroll({
-    top: offsetTop,
-    behavior: "smooth"
-  });
-}
+//   scroll({
+//     top: offsetTop,
+//     behavior: "smooth"
+//   });
+// }
 
 
 //Desplazamiento suave con JS
-const links = document.querySelectorAll("a");
+// const links = document.querySelectorAll("a");
  
-for (const link of links) {
-  link.addEventListener("click", clickHandler);
-}
+// for (const link of links) {
+//   link.addEventListener("click", clickHandler);
+// }
  
-function clickHandler(e) {
-  e.preventDefault();
-  const href = this.getAttribute("href");
-  const offsetTop = document.querySelector(href).offsetTop;
+// function clickHandler(e) {
+//   e.preventDefault();
+//   const href = this.getAttribute("href");
+//   const offsetTop = document.querySelector(href).offsetTop;
  
-  //--INI
-  // Quitar / Poner la clase
-  links.classList.add("active");
-  //--FIN
+//   //--INI
+//   // Quitar / Poner la clase
+//   links.classList.add("active");
+//   //--FIN
 
-  scroll({
-    top: offsetTop,
-    behavior: "smooth"
-  });
-}
+//   scroll({
+//     top: offsetTop,
+//     behavior: "smooth"
+//   });
+// }
+
 
 //Para crear un COMPONENTE es: Vue.componet('')
 // El primer parametro es la ETIQUETA que asignamos, en este caso <olainferior>
@@ -105,7 +103,7 @@ Vue.component("olasuperior", {
 Vue.component("inicio",{
   template:/*html*/ `
   <div id="subir">
-    <a href="#navbarSupportedContent">Inicio</a>
+    <a href="#app">Inicio</a>
   </div>
   `,
   data(){
