@@ -17,6 +17,8 @@ Una sola página ( Index.html ) donde utilizo los siguientes elementos:
 
 :zap: Imagen: https://www.pexels.com
 
+:zap: Icono SVG: https://freesvg.org/
+
 :zap: TinyPNG: https://tinypng.com/
 
 :zap: uiGradients: https://uigradients.com
