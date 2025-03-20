@@ -1,6 +1,8 @@
 # TG
 ### Proyecto Landing Page 
 
+https://alonsogza.github.io/TG/
+
 Una sola página ( Index.html ) donde utilizo los siguientes elementos:
 
 - HTML
